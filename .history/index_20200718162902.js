@@ -13,9 +13,6 @@ class Formatter {
       if (!excluded.includes(word)) {
         newerString.push(Formatter.capitalize(word))
       }
-      else {
-        newerString.push(word)
-      }
     })
     return newerString.join(" ")
   }

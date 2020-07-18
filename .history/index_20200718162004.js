@@ -8,15 +8,6 @@ class Formatter {
   static titleize(string) {
     let excluded = ["the", "a", "an", "but", "of", "and", "for", "at", "by", "from"]
     let newString = string.split(" ") 
-    let newerString = [Formatter.capitalize(newString[0])]
-    newString.slice(1).map(word => {
-      if (!excluded.includes(word)) {
-        newerString.push(Formatter.capitalize(word))
-      }
-      else {
-        newerString.push(word)
-      }
-    })
-    return newerString.join(" ")
+    console.log(newString)
   }
 }
